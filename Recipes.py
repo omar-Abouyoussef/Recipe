@@ -17,7 +17,7 @@ if not st.session_state.loaded:
         "🥚 Cracking eggs...",
         "🕒 Almost there...",
     ]
-    st.caption('Your App is in the oven')
+    st.write('Your App is in the oven')
     
     for frame in frames:
         loading_area.markdown(f"### {frame}")
@@ -55,9 +55,9 @@ if recipe == "Toast":
     msg = st.toast('Gathering ingredients...')
     time.sleep(3)
     msg.toast('Mixing.. 🥣')
-    time.sleep(2)
+    time.sleep(1)
     msg.toast('Baking... 🔥')
-    time.sleep(2)
+    time.sleep(1)
     msg.toast('Toast Ready Hurray!', icon = "🍞")
 
     st.image('Toast.jpg')
@@ -71,9 +71,9 @@ elif recipe == "Bonus Recipe: Souffle ":
     msg = st.toast('Gathering ingredients...')
     time.sleep(3)
     msg.toast('Mixing... 🥣')
-    time.sleep(2)
+    time.sleep(1)
     msg.toast('Baking... 🔥')
-    time.sleep(2)
+    time.sleep(1)
     msg.toast('Souffle Ready Hurray!', icon = "🍮")
 
     st.image("Souffle.jpg")
