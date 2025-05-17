@@ -16,22 +16,26 @@ Whether you're feeding tiny humans or just need a quick snack during the chaos.
 """)
 
 recipe = st.selectbox(
-    "Choose Recipe:",
-    [
+    label="Choose Recipe:",
+    options=[
         "Toast",
         "Bonus Recipe: Souffle ",
-    ]
+    ],
+    index=None,
+    placeholder='Choose Recipie',
+    key='recipe'
 )
+
 
 if recipe == "Toast":
 
     msg = st.toast('Gathering ingredients...')
-    time.sleep(1)
-    msg.toast('Mixing...')
-    time.sleep(2)
-    msg.toast('Baking...')
-    time.sleep(2)
-    msg.toast('Toast Ready Hurray!', icon = "🥞")
+    time.sleep(3)
+    msg.toast('Mixing.. 🥣')
+    time.sleep(3)
+    msg.toast('Baking... 🔥')
+    time.sleep(3)
+    msg.toast('Toast Ready Hurray!', icon = "🍞")
 
     st.image('Toast.jpg')
 
@@ -42,12 +46,12 @@ elif recipe == "Bonus Recipe: Souffle ":
                 Souffle
                  ''')
     msg = st.toast('Gathering ingredients...')
-    time.sleep(1)
-    msg.toast('Mixing...')
-    time.sleep(2)
-    msg.toast('Baking...')
-    time.sleep(2)
-    msg.toast('Souffle Ready Hurray!', icon = "🥞")
+    time.sleep(3)
+    msg.toast('Mixing... 🥣')
+    time.sleep(3)
+    msg.toast('Baking... 🔥')
+    time.sleep(3)
+    msg.toast('Souffle Ready Hurray!', icon = "🍮")
 
     st.image("Souffle.jpg")
 
