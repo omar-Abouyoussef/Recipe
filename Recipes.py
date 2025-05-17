@@ -3,6 +3,29 @@ import time
 # App Title
 st.set_page_config(page_title="Ultimate Mum-Approved Toast")
 
+if "loaded" not in st.session_state:
+    st.session_state.loaded = False
+
+if not st.session_state.loaded:
+    loading_area = st.empty()
+    
+    frames = [
+        "👩‍🍳 Starting the oven...",
+        "🔥 Preheating...",
+        "🧈 Buttering up...",
+        "🥣 Mixing magic...",
+        "🥚 Cracking eggs...",
+        "🕒 Almost there...",
+    ]
+    st.caption('Your App is in the oven')
+    
+    for frame in frames:
+        loading_area.markdown(f"### {frame}")
+        time.sleep(0.7)
+    
+    st.session_state.loaded = True
+    loading_area.empty()
+
 # Header and Intro
 st.title("Welcome to the Ultimate Mum-Approved Toast! 🧡")
 
