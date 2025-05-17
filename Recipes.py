@@ -27,10 +27,10 @@ if not st.session_state.loaded:
     loading_area.empty()
 
 # Header and Intro
-st.title("Welcome to the Ultimate Mum-Approved Toast! 🧡")
+st.title("Welcome to the Ultimate Mum-Approved Toast!")
 
 st.markdown("""
-Hi **Christina**! 👋
+Hi **Christina**!
 
 You asked for toast the recipe, and instead of just texting them like a normal person,  
 I made you a tiny app, because you deserve the **crunchiest**, **butteriest** Toast ever.  
