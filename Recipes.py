@@ -33,8 +33,8 @@ st.markdown("""
 Hi **Christina**!
 
 You asked for toast the recipe, and instead of just texting them like a normal person,  
-I made you a tiny python script, because you deserve the **crunchiest**, **butteriest** Toast ever.  
-Whether you're feeding tiny humans or just need a quick snack during the chaos this toast saves the day.
+I wrote you a tiny python script, because you deserve the **crunchiest**, **butteriest** Toast ever.  
+Whether you're feeding tiny humans or just need a quick snack during the chaos, this Toast recipe saves the day.
 
 """)
 
